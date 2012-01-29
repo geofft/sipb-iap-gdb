@@ -1,0 +1,61 @@
+starting a new program
+  run
+  --args
+attaching to an existing program
+opening a coredump
+
+setting breakpoints
+  break if
+  tbreak
+  watch
+continue
+command abbreviations
+bt
+up, down
+
+next / step / nexti / stepi
+finish
+until
+return
+
+help command
+  info command...
+
+print
+  printing values, changing values
+  printing values outside of a program
+  making function calls
+  print formats
+  disp
+  casts
+  whatis? info types?
+
+values in history -- $n, $, $$n
+convenience variables -- set $foo =
+walking a linked list
+
+gcc -ggdb3
+macros
+  info macro
+
+disassembly:
+  disas (disas/r $pc,$pc+100)
+  p/$i
+  set disassemble-next-line
+
+fake the return of read() or something
+
+
+If time permits, briefly demonstrate:
+
+remote debugging -- kvm
+  kvm -s -S -kernel /vmlinuz
+  target remote localhost:1234
+  set architecture i386:x86-64:intel
+
+reverse debugging
+  run, and break
+  set target record
+  c, and break
+  reverse-step
+  rc

@@ -7,15 +7,7 @@
 
 const char *hello = "Hello world!\n";
 
-int collatz(int n)
-{
-	if (n == 1)
-		return 1;
-	else if (n & 1)
-		return collatz(3 * n + 1);
-	else
-		return collatz(n / 2);
-}
+extern int collatz(int n);
 
 void server(void);
 

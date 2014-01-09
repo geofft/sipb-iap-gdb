@@ -1,22 +1,12 @@
+gdb as an interactive shell
+
 starting a new program
   run
   --args
 attaching to an existing program
 opening a coredump
 
-setting breakpoints
-  break if
-  tbreak
-  watch
-continue
-command abbreviations
-bt
-up, down
-
-next / step / nexti / stepi
-finish
-until
-return
+gdb as a slightly more interactive shell
 
 help command
   info command...
@@ -29,6 +19,23 @@ print
   disp
   casts
   whatis? info types?
+
+setting breakpoints
+  break if
+  tbreak
+  watch
+continue
+command abbreviations
+bt
+t a a bt
+up, down
+
+next / step / nexti / stepi
+finish
+until
+return
+
+aside: strace and objdump, /proc
 
 values in history -- $n, $, $$n
 convenience variables -- set $foo =
